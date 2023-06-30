@@ -1,0 +1,66 @@
+#navbar {
+  /* border: 10px solid green; */
+  padding: 25px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_links ul {
+  display: flex;
+}
+.nav_links ul li {
+  display: flex;
+  margin: 0 120px 0 0;
+}
+.nav_links ul li a {
+  font-size: 18px;
+  color: #ffff;
+  text-decoration: none;
+  border-bottom: 3px solid transparent; /* Add a transparent bottom border */
+  transition: #ffff 0.3s ease;
+}
+.nav_links ul li a:hover {
+  border-color: #ffff;
+  font-weight: 700;
+}
+/* .nav_links ul li a.active {
+  border-color: #ffff;
+  font-weight: 700;
+} */
+.nav_button a {
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 15px 25px;
+  text-decoration: none;
+  background-color: #ffaf29;
+  color: black;
+}
+.nav_button i {
+  margin-right: 40px;
+  border: none;
+  border-radius: 15px;
+  font-size: 30px;
+  padding: 12px 15px;
+  background-color: #2d2e32;
+  color: #ffaf29;
+}
+.nav_button i:hover {
+  background-color: #ffaf29;
+  color: #2d2e32;
+}
+.nav_button a:hover {
+  background-color: #ffaf59;
+}
+@media (min-width: 350px) and (max-width: 767px) {
+  .nav_links ul,
+  .nav_button i {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav_links ul,
+  .nav_button i {
+    display: none;
+  }
+}
