@@ -16,41 +16,46 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <script
+      src="https://kit.fontawesome.com/82f797382f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <section id="navbar">
-      <div class="logo">
-        <img
-          src="https://demo.phlox.pro/freelancer/wp-content/uploads/sites/272/2021/02/logo-header.svg"
-          class="attachment-full size-full"
-          alt=""
-          loading="lazy"
-        />
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_header">
+        <a href="index.html" class="logo"
+          ><img
+            src="https://demo.phlox.pro/freelancer/wp-content/uploads/sites/272/2021/02/logo-header.svg"
+            class="attachment-full size-full"
+            alt=""
+            loading="lazy"
+        /></a>
+        <button class="navbar_toggle">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
-      <div class="nav_links">
-        <ul>
-          <li>
-            <a class="active" href="index.html">
-              <span>Home</span>
-            </a>
-          </li>
-          <li>
-            <a class="active" href="portfolio.html">
-              <span>Portfolio</span>
-            </a>
-          </li>
-          <li>
-            <a class="active" href="#">
-              <span>Contact</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="nav_button">
-        <i class="fa fa-globe"></i>
-        <a href="#">Contact Me</a>
-      </div>
-    </section>
+
+      <ul class="main_nav">
+        <li>
+          <a href="index.html" class="nav_links">Home</a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="nav_links">Portfolio</a>
+        </li>
+        <li>
+          <a href="#" class="nav_links">Contact</a>
+        </li>
+        <li>
+          <i class="fa fa-globe"></i>
+        </li>
+        <li>
+          <button href="#">Contact Me</button>
+        </li>
+      </ul>
+    </nav>
     <!-- Projects -->
     <section id="project_section">
       <div id="projects">
@@ -147,5 +152,6 @@
       </div>
     </section>
     <script src="JS/animation.js"></script>
+    <script src="JS/nav.js"></script>
   </body>
 </html>

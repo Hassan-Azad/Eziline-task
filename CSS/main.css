@@ -70,6 +70,18 @@ p {
   height: auto;
   overflow: hidden;
 }
+.nav_button a {
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 15px 25px;
+  text-decoration: none;
+  background-color: #ffaf29;
+  color: black;
+}
+.nav_button a:hover {
+  background-color: #ffaf59;
+}
 @media (min-width: 350px) and (max-width: 767px) {
   #header {
     flex-direction: column;
