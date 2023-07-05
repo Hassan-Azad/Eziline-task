@@ -22,7 +22,7 @@
 #count2 {
   font-size: 84px;
   color: #64f4ab;
-  animation: count-up 2s ease-out;
+  /* animation: count-up 2s ease-out; */
 }
 .div h3 {
   opacity: 0.7;

@@ -1,11 +1,3 @@
-a {
-  font-size: 18px;
-  color: #ffff;
-  text-decoration: none;
-  border-bottom: 3px solid transparent; /* Add a transparent bottom border */
-  transition: #ffff 0.3s ease;
-}
-
 .navbar {
   padding: 25px 35px;
   display: flex;
@@ -23,17 +15,29 @@ a {
 .logo_header {
   display: flex;
   margin-left: 2%;
+  transform: translateX(-150%);
+  transition: 1s ease;
 }
-
+.logo_header.active {
+  transform: translateX(0);
+}
 .main_nav {
   display: flex;
   width: 70%;
   float: right;
   align-items: center;
-  /* margin-right: 2%; */
   justify-content: space-between;
   list-style: none;
-  /* border: 2px solid blue; */
+}
+.main_nav li a {
+  font-size: 18px;
+  color: #ffff;
+  text-decoration: none;
+  border-bottom: 3px solid transparent; /* Add a transparent bottom border */
+  transition: #ffff 0.3s ease;
+}
+.main_nav li a.nav-active {
+  border-bottom: 3px solid #ffff;
 }
 .main_nav li a:hover {
   border-color: #ffff;
@@ -42,11 +46,6 @@ a {
 
 .main_nav li {
   display: inline;
-  color: #ffffff;
-  /* display: flex; */
-  /* margin: 0 100px 0 0; */
-}
-.main_nav li a {
   color: #ffffff;
 }
 .main_nav li i {
@@ -57,6 +56,11 @@ a {
   padding: 12px 15px;
   background-color: #2d2e32;
   color: #ffaf29;
+  opacity: 0;
+  transition: 3s ease;
+}
+.main_nav li i.active {
+  opacity: 1;
 }
 .main_nav li button {
   border: none;
@@ -66,6 +70,11 @@ a {
   text-decoration: none;
   background-color: #ffaf29;
   color: black;
+  transform: translateX(150%);
+  transition: 1s ease;
+}
+.main_nav li button.active {
+  transform: translateX(0);
 }
 .main_nav li i:hover {
   background-color: #ffaf29;

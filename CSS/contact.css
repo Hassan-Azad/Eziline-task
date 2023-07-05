@@ -1,0 +1,194 @@
+#contact {
+  /* border: 2px solid palevioletred; */
+  display: flex;
+  margin: 3%;
+  padding: 1%;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.contact_me {
+  /* border: 2px dotted white; */
+  width: 48%;
+  margin-top: 15px;
+  /* height: 550px; */
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  opacity: 0;
+  transform: translateY(25%);
+  transition: 1s ease;
+}
+.content.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.content h6 {
+  color: #64f4ab;
+  font-size: 18px;
+  opacity: 0;
+  transition: 4s ease;
+}
+.content h6.active {
+  opacity: 1;
+}
+.content h2 {
+  font-size: 38px;
+}
+.content p {
+  font-size: 17px;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+.phone {
+  margin-top: 10%;
+}
+.Email {
+  margin-left: 15%;
+  margin-top: 2%;
+}
+.phone,
+.Email {
+  opacity: 0;
+  transform: translateX(15%);
+  transition: 2s ease;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.Email.active,
+.phone.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.phone i,
+.Email i {
+  width: 40%;
+  padding: 45px;
+  border-radius: 50%;
+  color: #64f4ab;
+  background-color: rgba(0, 0, 0, 0.094);
+}
+.Email i {
+  width: 44%;
+}
+.phone i:hover,
+.Email i:hover {
+  background-color: #ffaf29;
+  color: #333;
+}
+.phone p,
+.phone h3 {
+  margin-left: -140px;
+}
+.Email p,
+.Email h3 {
+  margin-left: -110px;
+}
+
+.form {
+  /* border: 2px dashed purple; */
+  width: 47%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px;
+  grid-gap: 18px;
+  height: 480px;
+  opacity: 0;
+  transform: translateY(25%);
+  transition: 4s ease;
+}
+.form.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+#name,
+#email,
+#message {
+  background-color: #333;
+  border: 1px solid #64f4ab;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#message {
+  width: 205%;
+  height: 150%;
+  margin-top: 40px;
+}
+input,
+textarea {
+  color: white;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+::placeholder {
+  color: white;
+  font-size: 20px;
+}
+#submit {
+  width: 60%;
+  margin-top: 150px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 2px 20px;
+  text-decoration: none;
+  background-color: #ffaf29;
+  color: black;
+  font-weight: 550;
+}
+#submit:hover {
+  background-color: #ffaf59;
+}
+
+@media (min-width: 350px) and (max-width: 767px) {
+  #contact {
+    flex-direction: column;
+  }
+  .contact_me {
+    width: 98%;
+    margin-top: 10px;
+  }
+  .content h2 {
+    font-size: 30px;
+  }
+  .phone i,
+  .Email i {
+    width: 20%;
+    height: 20%;
+    padding: 40px;
+  }
+  .Email i {
+    width: 24%;
+    height: 24%;
+  }
+  .phone p,
+  .phone h3 {
+    margin-left: -40px;
+  }
+  .Email p,
+  .Email h3 {
+    margin-left: -10px;
+  }
+
+  .form {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  #message {
+    width: 100%;
+    margin-top: 5px;
+  }
+  #submit {
+    width: 50%;
+    margin-top: 5px;
+    padding: 15px 20px;
+  }
+}

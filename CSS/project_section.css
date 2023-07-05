@@ -9,17 +9,24 @@
 }
 .project_des > .content {
   margin: 20% 10% 0 15%;
+  transform: translateX(20%);
+  opacity: 0;
+  transition: 2s ease;
+}
+.project_des > .content.active {
+  transform: translateX(0);
+  opacity: 1;
 }
 .project_des > .content h6 {
   color: #64f4ab;
 }
 .project_des > .content h2 {
-  font-size: 29px;
+  font-size: 30px;
   padding: 10px 0;
   line-height: 1.5;
 }
 .project_des > .content p {
-  font-size: 14px;
+  font-size: 17px;
   opacity: 0.9;
   padding: 0 0 20px 0;
   line-height: 1.2;
@@ -46,8 +53,11 @@
   top: 10%;
   left: 10%;
   transform: rotate(-10deg);
-  transition: 2s;
+  transition: 2s ease;
   border-radius: 20px;
+}
+.project_img img.active {
+  transform: rotate(0);
 }
 @media (min-width: 350px) and (max-width: 767px) {
   #projects {
