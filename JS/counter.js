@@ -13,10 +13,10 @@ function animateValue(element, start, end, duration) {
 }
 
 const Element = document.getElementById("count");
-animateValue(Element, 0, 80, 5000);
+animateValue(Element, 0, 80, 15000);
 const Element0 = document.getElementById("count0");
-animateValue(Element0, 0, 100, 5000);
+animateValue(Element0, 0, 100, 15000);
 const Element1 = document.getElementById("count1");
-animateValue(Element1, 0, 27, 5000);
+animateValue(Element1, 0, 27, 15000);
 const Element2 = document.getElementById("count2");
-animateValue(Element2, 0, 10, 5000);
+animateValue(Element2, 0, 10, 15000);
